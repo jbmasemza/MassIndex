@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="1"
+    android:background="@android:color/holo_blue_dark"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context="com.example.android.massindex.MainActivity">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/height"
+        android:hint="Enter your Height"
+        android:layout_weight="1"
+        android:background="@android:color/holo_green_light"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Select weight"
+        android:id="@+id/weight"
+        android:layout_weight="1"
+        android:textSize="45sp"
+        android:background="@android:color/holo_orange_light"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:id="@+id/RadioGroup"
+        android:layout_weight="1"
+        android:background="@android:color/holo_orange_dark">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="0-49"
+            android:id="@+id/slender"
+            android:layout_weight="1"
+            android:background="@android:color/holo_blue_light"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="50-89"
+            android:id="@+id/fit"
+            android:layout_weight="1"
+            android:background="@android:color/holo_blue_light"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="90-180"
+            android:id="@+id/obese"
+            android:layout_weight="1"
+            android:background="@android:color/holo_blue_light"/>
+    </RadioGroup>
+
+</LinearLayout>
